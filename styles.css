@@ -1,0 +1,133 @@
+/* --- General Styling & Theme --- */
+body {
+  padding-top: 75px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffbf5;
+}
+
+/* Custom orange color theme for Bootstrap components */
+:root {
+  --bs-primary: #f97316;
+  --bs-primary-rgb: 249, 115, 22;
+  --bs-dark: #1e293b;
+  --bs-dark-rgb: 30, 41, 59;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
+  border-color: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+}
+
+.btn-dark {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #334155;
+  border-color: #334155;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+/* --- Component-Specific Styling --- */
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  color: var(--bs-primary) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--bs-primary) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  color: #475569;
+  transition: color 0.3s;
+}
+.cart-icon:hover {
+  color: var(--bs-primary);
+}
+
+/* Hero Section */
+.hero-bg {
+  background: linear-gradient(
+      to right,
+      rgba(234, 88, 12, 0.8),
+      rgba(249, 115, 22, 0.8)
+    ),
+    url("https://placehold.co/1920x1080/333333/FFFFFF?text=Indian+Cuisine");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-bg h1 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styling */
+section {
+  padding: 80px 0;
+}
+
+#featured-menu {
+  background: linear-gradient(to bottom, #fffbf5, #ffffff);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #1e293b;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 0.75rem;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}

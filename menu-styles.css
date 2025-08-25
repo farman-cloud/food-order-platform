@@ -1,0 +1,20 @@
+/* --- Menu Page Specific Styles --- */
+
+.menu-page {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.category-title {
+  font-weight: 700;
+  color: var(--bs-dark);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--bs-primary);
+  display: inline-block;
+}
+
+.menu-item .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
